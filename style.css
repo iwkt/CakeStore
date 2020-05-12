@@ -1,0 +1,21 @@
+p {
+	font-size: 12px;
+}
+
+.center {
+	align-self: center;
+	text-align: center;
+}
+
+.bdr {
+	border: 1px solid #005;
+}
+
+.Question {
+	color: red;
+}
+
+.remark {
+	color: blue;
+}
+/*# sourceMappingURL=style.css.map */
