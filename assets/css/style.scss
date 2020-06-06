@@ -1,0 +1,143 @@
+$a_height: 50px;
+$c_font: rgb(84, 19, 0);
+$c_border: #DBCAC5;
+
+* ,.grid {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+div[class*="col"] {
+  margin: 0;
+  padding: 0;
+}
+
+div[class*="grid"] {
+  margin: 0;
+  padding: 0;
+}
+
+html,a,li,ul{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-size: 24px;
+  color: rgb(92, 69, 50);
+}
+
+li {
+  list-style: none;
+}
+
+
+.arrow {
+  position: relative;
+
+  &::after {
+    content: "";
+
+    display:inline-block;
+    width: 6px;
+    height: 16px;
+    background:url(.././images/arrow.png) no-repeat;
+    background-size:contain;
+
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+}
+
+.container {
+  // width: 375px;  // iphone用
+  width: auto;
+  margin: 0 auto;
+}
+
+.contents-title {
+  margin: auto;
+  
+  & h2 {
+    color: #541300;
+    font-size: 28px;
+    font-weight: normal;
+    font-family: Cambria, Georgia, serif;
+    text-align: center;
+    padding: 3rem 0 2rem 0;
+    }
+}
+
+.header-logo {
+  & img {
+    object-fit: cover;
+    padding: 10px;
+    max-width: 165px;
+  }
+}
+
+.nav-item {
+  text-align: center;
+  border-top: 1px solid $c_border;
+  border-left: 1px solid $c_border;
+
+  & a {
+  color: $c_font;
+  font-family: Cambria, Georgia, serif;
+  font-size: 1vw;
+  display: inline-block;
+  line-height: $a_height;
+  }
+}
+
+
+.nav-list {
+  height: $a_height;
+}
+
+.news-wrapper {
+  background-color: #f8f4e7;
+}
+
+.slide {
+//   // display: none;
+//   background-image: url(../images/mainVisual2.jpg);
+//   background-position: center center;
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   width: 100%;
+//   height: 270px;
+  position: relative;
+//   text-align: center;
+
+& img {
+  // position: absolute;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
+  // width: 149px;
+  // height: auto;
+  width: 100%;
+  max-width: 817px;
+  height: 270px;
+  object-fit: cover;
+}
+
+}
+
+.logo img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  width: 149px ;
+  height: auto ;
+}
