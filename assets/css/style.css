@@ -99,6 +99,7 @@ li {
 }
 
 .slide {
+  height: 270px;
   position: relative;
 }
 
@@ -114,8 +115,8 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -80%);
-          transform: translate(-50%, -80%);
+  -webkit-transform: translate(-50%, -70%);
+          transform: translate(-50%, -70%);
   width: 149px;
   height: auto;
 }
