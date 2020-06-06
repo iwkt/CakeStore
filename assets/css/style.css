@@ -86,7 +86,7 @@ li {
   color: #541300;
   font-family: Cambria, Georgia, serif;
   font-size: 1vw;
-  display: inline-block;
+  display: block;
   line-height: 50px;
 }
 
