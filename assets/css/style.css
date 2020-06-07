@@ -7,6 +7,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: Verdana,"Hiragino Kaku Gothic Pro","Meiryo","MS PGothic", sans-serif;
+  font-size: 14px;
+}
+
 div[class*="col"] {
   margin: 0;
   padding: 0;
@@ -66,13 +71,17 @@ li {
   font-weight: normal;
   font-family: Cambria, Georgia, serif;
   text-align: center;
-  padding: 3rem 0 2rem 0;
+  padding: 2rem 0 1rem 0;
+}
+
+.header-top {
+  height: 56px;
 }
 
 .header-logo img {
   -o-object-fit: cover;
      object-fit: cover;
-  padding: 10px;
+  padding: 10px 10px 0 10px;
   max-width: 165px;
 }
 
@@ -82,10 +91,14 @@ li {
   border-left: 1px solid #DBCAC5;
 }
 
+.nav-item:first-child {
+  border-left: none;
+}
+
 .nav-item a {
   color: #541300;
   font-family: Cambria, Georgia, serif;
-  font-size: 1vw;
+  font-size: 2.5vw;
   display: block;
   line-height: 50px;
 }
@@ -94,8 +107,51 @@ li {
   height: 50px;
 }
 
+.news {
+  border-top: 1px solid white;
+}
+
 .news-wrapper {
   background-color: #f8f4e7;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.news a {
+  color: #541300;
+}
+
+.news li {
+  color: #541300;
+  padding: 0 0 10px;
+}
+
+.news li:first-child {
+  padding: 10px 0;
+}
+
+.news-new {
+  position: relative;
+}
+
+.news-new::after {
+  content: "NEW";
+  position: absolute;
+  top: 3px;
+  left: 88px;
+  color: white;
+  background-color: #ba1313;
+  border-radius: 50%;
+  font-size: 8px;
+  text-align: center;
+  line-height: 3;
+  height: 28px;
+  width: 28px;
+}
+
+.news-list {
+  width: 100%;
+  margin: 0 0.8rem;
 }
 
 .slide {
@@ -119,5 +175,11 @@ li {
           transform: translate(-50%, -70%);
   width: 149px;
   height: auto;
+}
+
+@media (min-width: 48rem) {
+  .nav-item a {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
