@@ -56,6 +56,11 @@ li {
   left: 50%;
 }
 
+.bnr {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
 .container {
   width: auto;
   margin: 0 auto;
@@ -141,12 +146,12 @@ li {
 .news-table a {
   display: block;
   font-size: 12px;
-  width: 61.666%;
-  margin: 17px auto 0 auto;
+  width: 62%;
+  margin: 17px auto 17px auto;
   border: 1px solid #cec2c2;
   text-align: center;
   font-weight: bold;
-  line-height: 2.0;
+  line-height: 2.4;
   background: #fff;
 }
 
