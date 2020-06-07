@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+body {
+  font-family: Verdana,"Hiragino Kaku Gothic Pro","Meiryo","MS PGothic", sans-serif;
+  font-size: 14px;
+}
+
 div[class*="col"] {
   margin: 0;
   padding: 0;
@@ -71,15 +76,18 @@ li {
     font-weight: normal;
     font-family: Cambria, Georgia, serif;
     text-align: center;
-    padding: 3rem 0 2rem 0;
+    padding: 2rem 0 1rem 0;
     }
 }
 
-.header-logo {
-  & img {
-    object-fit: cover;
-    padding: 10px;
-    max-width: 165px;
+.header {
+  &-top {
+    height: 56px;
+  }
+  &-logo img {
+      object-fit: cover;
+      padding: 10px 10px 0 10px;
+      max-width: 165px;
   }
 }
 
@@ -88,10 +96,14 @@ li {
   border-top: 1px solid $c_border;
   border-left: 1px solid $c_border;
 
+  &:first-child {
+    border-left: none;
+  }
+
   & a {
   color: $c_font;
   font-family: Cambria, Georgia, serif;
-  font-size: 1vw;
+  font-size: 2.5vw;
   display: block;
   line-height: $a_height;
   }
@@ -102,8 +114,48 @@ li {
   height: $a_height;
 }
 
-.news-wrapper {
-  background-color: #f8f4e7;
+.news {
+  border-top: 1px solid white;
+  &-wrapper {
+    background-color: #f8f4e7;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  & a{
+    color: $c_font;
+  }
+  & li {
+    color: $c_font;
+    padding: 0 0 10px;
+
+    &:first-child {
+      padding: 10px 0;
+    }
+  }
+  &-new {
+    position: relative;
+
+    &::after {
+      content: "NEW";
+      position: absolute;
+      top: 3px;
+      left: 88px;
+      color: white;
+      background-color: #ba1313;
+      border-radius: 50%;
+      font-size: 8px;
+      text-align: center;
+      line-height: 3;
+      height: 28px;
+      width: 28px;
+
+    }
+  }
+  
+  &-list {
+    width: 100%;
+    margin: 0 0.8rem;
+  }
 }
 
 .slide {
@@ -139,4 +191,13 @@ li {
   transform: translate(-50%, -70%);
   width: 149px ;
   height: auto ;
+}
+
+
+@media(min-width: 48rem) {
+  .nav-item {
+    & a {
+      font-size: 1rem;
+    }
+  }
 }
