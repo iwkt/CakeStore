@@ -85,7 +85,7 @@ li {
 .nav-item a {
   color: #541300;
   font-family: Cambria, Georgia, serif;
-  font-size: 1vw;
+  font-size: 10px;
   display: block;
   line-height: 50px;
 }
@@ -119,5 +119,11 @@ li {
           transform: translate(-50%, -70%);
   width: 149px;
   height: auto;
+}
+
+@media (min-width: 48rem) {
+  .nav-item a {
+    font-size: 1.2rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
