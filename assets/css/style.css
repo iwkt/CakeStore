@@ -62,7 +62,8 @@ li {
 }
 
 .bnr img {
-  width: 320px;
+  max-width: 320px;
+  height: auto;
 }
 
 .container {
