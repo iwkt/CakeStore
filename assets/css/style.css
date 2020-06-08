@@ -61,6 +61,10 @@ li {
   margin-bottom: 8px;
 }
 
+.bnr img {
+  width: 320px;
+}
+
 .container {
   width: auto;
   margin: 0 auto;
