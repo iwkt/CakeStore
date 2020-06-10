@@ -38,12 +38,12 @@ li {
   list-style: none;
 }
 
-.Pseudo-elem {
+.arrow {
   position: relative;
   z-index: 10;
 }
 
-.Pseudo-elem::after {
+.arrow::after {
   content: "";
   display: inline-block;
   width: 6px;
@@ -56,17 +56,6 @@ li {
   bottom: 0;
   left: 50%;
   z-index: -1;
-}
-
-.Pseudo-elem::before {
-  position: absolute;
-  content: "";
-  width: 80%;
-  height: 2px;
-  background-color: orange;
-  top: 1px;
-  left: 10%;
-  display: block;
 }
 
 .bnr {
@@ -245,6 +234,16 @@ li {
 .menu li {
   border-left: 0.25px solid #DBCAC5;
   border-top: 0.25px solid #DBCAC5;
+}
+
+.nav-item span {
+  position: absolute;
+  top: 1px;
+  width: 80%;
+  height: 2px;
+  background-color: orange;
+  left: 10%;
+  display: none;
 }
 
 .text-long {

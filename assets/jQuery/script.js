@@ -16,5 +16,5 @@ $('.js_menu_item_link dt').on('click', function () {
 $(".menu dd").hide();
 $(".menu dt").on("click", function () {
   $(this).nextAll().slideToggle();
-  $('.arrow::before').css('display','none')
+  $('.nav-item span').css('display','block')
 });
