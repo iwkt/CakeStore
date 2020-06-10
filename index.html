@@ -9,7 +9,9 @@
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link href="./assets/slick/slick-theme.css" rel="stylesheet" type="text/css">
   <link href="./assets/slick/slick.css" rel="stylesheet" type="text/css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script> -->
+  <script src="./assets/jQuery/jquery.min.js"></script>
   <script src="./assets/slick/slick.min.js"></script>
   <title>フレデリック</title>
   <link rel="shortcut icon" href="./assets/images/cake-icon.png">
@@ -19,24 +21,64 @@
   <div class="container">
     <header class="header">
       <div id="header-top" class="header-top grid">
-        <div id="company-logo" class="header-logo  col-10">
+        <div id="company-logo" class="header-logo  col-9">
           <img src="./assets/images/heade-logo.png" alt="Fredlic_cassal">
         </div>
-
-        <div class="col-1-middle">
+        <div class="icons col-3-middle">
           <i class="fab fa-facebook"></i>
-        </div>
-        <div class="camera col-1-middle">
           <i class="fas fa-camera"></i>
         </div>
       </div>
 
-      <div id="nav" class="nav-list grid-5">
-        <div class="nav-item arrow col"><a href="#">ABOUT</a></div>
+      <div id="nav" class="nav-list grid">
+        <div class="nav-item Pseudo-elem col">
+          <dl class="menu">
+            <dt><a herf="#">ABOUT</a></dt>
+              <dd>
+                <ul>
+                  <li><a href="#">Brand Profile</a></li>
+                  <li><a href="#">Spécialité</a></li>
+                </ul>
+              </dd>
+          </dl>
+        </div>
+        <div class="nav-item col">
+          <dl class="menu"><a herf="#">BOUTIQUE</a></div>
+        <div class="nav-item Pseudo-elem col">
+          <dl class="menu">
+            <dt><a herf="#">COLLECTION</a></dt>
+            <dd>
+              <ul>
+                <li><a href="#">Season</a></li>
+                <li><a href="#">Inspiration</a></li>
+                <li class="text-long"><a href="#">Petitis Gateaux/Entrements</a></li>
+                <li><a href="#">Chocolats</a></li>
+                <li><a href="#">Others</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+        <div class="nav-item col">
+          <dl class="menu"><a herf="#">COMPANY</a>
+        </div>
+        <div class="nav-item Pseudo-elem col">
+          <dl class="menu">
+            <dt><a herf="#">ONLINE SHOP</a></dt>
+            <dd>
+              <ul>
+                <li><a href="#">Brand Profile</a></li>
+                <li><a href="#">Spécialité</a></li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+
+
+        <!-- <div class="nav-item  Pseudo-elem col"><a href="#">ABOUT</a></div>
         <div class="nav-item  col"><a href="#">BOUTIQUE</a></div>
-        <div class="nav-item arrow col"><a href="#">COLLECTION</a></div>
+        <div class="nav-item Pseudo-elem col"><a href="#">COLLECTION</a></div>
         <div class="nav-item col"><a href="#">COMPANY</a></div>
-        <div class="nav-item arrow col"><a href="#">ONLINE SHOP</a></div>
+        <div class="nav-item Pseudo-elem col"><a href="#">ONLINE SHOP</a></div> -->
       </div>
     </header>
 
@@ -113,12 +155,19 @@
               </div>
             </div>
           </div>
-          <div id="profile" class="pf grid">
-            <div class="contents-title col-4_xs-12">
-              <h2>Profile</h2>
+        </div>
+          <div id="profile" class="pf grid-3">
+            <div class="contents-title col_xs-12">
+              <h2>Brand Profile</h2>
+            </div>
+            <div class="contents-title col_xs-12">
+              <h2>Cacao Forest</h2>
+            </div>
+            <div class="contents-title col_xs-12">
+              <h2>Spécialité</h2>
             </div>
           </div>
-        </div>
+        
     </section>
 
 
